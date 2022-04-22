@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Is A Test</title>
+    <!-- Start Styles -->
+    <style>
+      html {
+        font-size: 16px;
+      }
+      body {
+        padding: 2em 2em;
+        font-size: 1.2rem;
+      }
+      /* p {
+        font-size: 1.3rem;
+      } */
+      img {
+        float: left;
+        margin: 1em 1em 1em 0;
+        max-width: 60%;
+      }
+      nav {
+        text-align: center;
+        background-color: black;
+      }
+      nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 0.5em;
+      }
+      nav a:hover,
+      footer a:hover {
+        text-decoration: underline;
+        background-color: cadetblue;
+        border-radius: 0.3em;
+      }
+      footer {
+        clear: both;
+      }
+
+      @media all and (max-width: 777px) {
+        img {
+          max-width: 80%;
+          float: none;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        body {
+          font-size: 1rem;
+        }
+      }
+    </style>
+    <!-- End Styles -->
+  </head>
+  <body>
+    <header>
+      <h1>Hello World!</h1>
+      <nav>
+        <a href="https://app.wombo.art/" target="_blank">Wombo AI Generator</a>
+        <a href="https://onesquareminesweeper.com/" target="_blank"
+          >Minesweeper</a
+        >
+        <a href="https://screamintothevoid.com/" target="_blank"
+          >Scream into the Void</a
+        >
+        <a href="https://musclewiki.com/" target="_blank">Muscle Wiki</a>
+      </nav>
+    </header>
+    <img
+      src="images/brandon-and-chase.png"
+      alt="Man and his dog laying on the floor"
+    />
+    <p>
+      This is a test page for IT 161. I unfortunatley didnt pass the first time
+      around so Im back again. I think it'll be a good thing though so I can
+      practice my HTML fundamentals some more.
+    </p>
+
+    <footer>
+      <p>
+        <small
+          >&copy; 2022 by Brandon Davila, All Rights Reserved ~
+          <a id="html-checker" href="#">Check HTML</a> ~
+          <a id="css-checker" href="#">Check CSS</a></small
+        >
+      </p>
+    </footer>
+
+    <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document
+        .getElementById("html-checker")
+        .setAttribute(
+          "href",
+          "https://validator.w3.org/nu/?doc=" + location.href
+        );
+
+      document
+        .getElementById("css-checker")
+        .setAttribute(
+          "href",
+          "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+    </script>
+  </body>
+</html>
