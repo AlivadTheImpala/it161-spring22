@@ -1,0 +1,177 @@
+/************************
+*****   basic styling   *****
+************************/
+html {
+  background-color: #f4f4ec;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #f4f4ec;
+  overflow: auto;
+  
+}
+
+h1 > a {
+  text-decoration: none;
+  color: #5d5e5e;
+}
+.logo {
+  color: #5d5e5e;
+  margin-left: 1%;
+  font-size: 1.25em;
+}
+  
+section a,
+aside a,
+footer a {
+  text-decoration: none;
+  color: #20a3fa;
+  
+}
+section a:hover,
+aside a:hover,
+footer a:hover {
+  text-decoration:underline;
+  
+}
+
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1em;
+}
+
+img {
+  border-radius: .25em;
+}
+
+
+/************************
+*****   AIA Table Styles   *****
+************************/
+.aia_tables {
+  border-collapse: collapse;
+  width: 70em;
+  background-color: #f4f4ec;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.15);
+  margin: 1em auto;
+  border: .2em solid #dea47c;
+}
+
+/* Select only first column of the table */
+.client_table td:nth-of-type(odd) {
+  background-color: #dea47c;
+}
+.client_table a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.client_table td,
+.audience_table td {
+  border: 2px solid #1c1d1d;
+  border-left: 2px solid #1c1d1d;
+  border-radius: 4px;
+  background-color: #ffddc678;
+}
+.audience_table th {
+  background-color: #dea47c;
+}
+/* End AIA Table Styles  */
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width: 1400px) {
+  main.wrapper {
+    width: 85%;
+    margin: auto;
+  }
+  img{
+    margin-right:.5em;
+    
+  }
+  /* Left column */
+  section {
+    width: 65%;
+    float: left;
+  }
+
+  /* Right Column */
+  aside {
+    width: 35%;
+    float: right;
+  }
+
+  img.desktop {
+    float: left;
+    width: 50%;
+  }
+
+  img.tablet,
+  img.phone {
+    display: none;
+  }
+
+  
+}
+
+/* TABLET */
+@media all and (min-width: 737px) and (max-width: 1399px) {
+  section {
+    width: 60%;
+    float: left;
+    
+  }
+
+  aside {
+    width: 40%;
+    float: right;
+  }
+
+  img{
+    margin: .5em;
+  }
+
+  
+
+  img.tablet {
+    width: 95%;
+    display: inline-block;
+  }
+
+  img.desktop,
+  img.phone {
+    display: none;
+  }
+
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+    background-color: #dea47c;
+    color: #e1f2ea;
+  }
+}
+
+/* PHONE */
+@media all and (max-width: 736px) {
+  img.phone {
+    
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 75%;
+    display: block;
+    
+  }
+
+  img.tablet,
+  img.desktop {
+    display: none;
+  }
+  ul.topnav li a.selected {
+    background-color: #dea47c;
+    color: #f4f4ec;
+  }
+}

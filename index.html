@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brandons Portal Home</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <script src="https://use.fontawesome.com/6a71565c22.js"></script>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/portal.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+
+  <body>
+    <!-- START WRAPPER -->
+    <main class="wrapper">
+      <header>
+        <h1>
+          <a href="index.php">
+            <i class="logo fa fa-home"></i> Brandons IT161 Portal
+          </a>
+        </h1>
+        <nav>
+          <ul class="topnav" id="myTopnav">
+            <li><a href="index.php" class="selected">Welcome</a></li>
+            <li><a href="elements.php">HTML Elements</a></li>
+            <li><a href="aia.html">AIA</a></li>
+            <li><a href="big/index.php">Big</a></li>
+            <li><a href="http://w3schools.com">W3 School</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/learning/me/in-progress?u=95230001"
+                >LinkedIn Learning</a
+              >
+            </li>
+            <li><a href="flowchart.php">Flowchart/Layout</a></li>
+            <li><a href="fp/index.php">Final Project</a></li>
+            <li><a href="contactme.php">Contact Brandon</a></li>
+            <li class="icon">
+              <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Section for Main content (Left Column Desktop) -->
+      <section>
+        <h2 class="pageID">Bienvenido! Welcome!</h2>
+
+        <!-- Three images placed -->
+        <img
+          src="images/desktop.jpg"
+          class="desktop"
+          alt="Man in a thick jacket and staffordshire terrier on a snowy sidewalk"
+        />
+        <img
+          src="images/mobile.jpg"
+          class="phone"
+          alt="Photo self-portrait of page author "
+        />
+        <p>
+          Welcome to my It 161 portal! A little bit about me. I started my
+          journey into the world of web development in order to help my dad run
+          his dog sanctuary,
+          <a href="https://www.greendogoasis.com/" target="_blank"
+            >Green Dog Oasis</a
+          >. He designed his own website on the Wix platform and frankly, it
+          needed some work. So I started learning how to code and I've already
+          redesigned the website during IT 162. The process for the redesign
+          taught me a lot and I can already feel myself growing confident in my
+          coding, but theres still so much to learn.
+        </p>
+        <p>
+          I'm a huge gamer and love diving into a good narrative or
+          <a href="https://en.wikipedia.org/wiki/Soulslike" target="_blank"
+            >souls-like</a
+          >. Currently, I'm playing Elden Ring, another game by
+          <a href="https://en.wikipedia.org/wiki/FromSoftware">FromSoftware</a>.
+          My friend even got into the series, which is great because the game
+          lets you explore the world and defeat the bosses in multiplayer mode.
+        </p>
+      </section>
+      <!-- END LEFT COL -->
+
+      <!-- Aside for Sidebar (Right Column Desktop) -->
+      <aside>
+        <h3 class="gamelist">Games I'm playing</h3>
+        <ul>
+          <li>
+            <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring"
+              >Elden Ring</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.doublefine.com/games/psychonauts-2"
+              >Pyschonauts 2</a
+            >
+          </li>
+          <li>
+            <a href="https://housemarque.com/games/returnal">Returnal</a>
+          </li>
+        </ul>
+        <img
+          src="images/tablet.jpg"
+          class="tablet"
+          alt="Man and his dog both lying on their backs in a livingroom"
+        />
+        <p>
+          Thanks for stopping by and I hope you have a fine time exploring my
+          little portal page!
+        </p>
+      </aside>
+      <!-- END RIGHT COL -->
+
+      <!-- START Footer -->
+      <footer>
+        <p>
+          <small>
+            &copy; 2022-<?=date("Y")?>
+            by <a href="contactme.php">Brandon Davila</a>, All Rights Reserved ~
+            <a id="html-checker" href="#">Check HTML</a> ~
+            <a id="css-checker" href="#">Check CSS</a>
+          </small>
+        </p>
+      </footer>
+      <!-- END Footer -->
+    </main>
+    <!-- END WRAPPER -->
+
+    <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document
+        .getElementById("html-checker")
+        .setAttribute(
+          "href",
+          "https://validator.w3.org/nu/?doc=" + location.href
+        );
+      document
+        .getElementById("css-checker")
+        .setAttribute(
+          "href",
+          "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+
+      //manages mobile nav - from W3Schools
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

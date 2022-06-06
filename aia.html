@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AIA Table</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <script src="https://use.fontawesome.com/6a71565c22.js"></script>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/portal.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+
+  <body>
+    <!-- START WRAPPER -->
+    <main class="wrapper">
+      <header>
+        <h1>
+          <a href="index.php">
+            <i class="logo fa fa-home"></i> Brandons IT161 Portal
+          </a>
+        </h1>
+        <nav>
+          <ul class="topnav" id="myTopnav">
+            <li><a href="index.php" class="selected">Welcome</a></li>
+            <li><a href="elements.php">HTML Elements</a></li>
+            <li><a href="aia.html">AIA</a></li>
+            <li><a href="big/index.php">Big</a></li>
+            <li><a href="http://w3schools.com">W3 School</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/learning/me/in-progress?u=95230001"
+                >LinkedIn Learning</a
+              >
+            </li>
+            <li><a href="flowchart.php">Flowchart/Layout</a></li>
+            <li><a href="fp/index.php">Final Project</a></li>
+            <li><a href="contactme.php">Contact Brandon</a></li>
+            <li class="icon">
+              <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Begin Table -->
+      <div class="aia_tables">
+        <!-- Client Info table Start -->
+        <table class="client_table">
+          <tr>
+            <td>Client Name:</td>
+            <td>Emily Shaffer (New Customer) - Final Decision Maker</td>
+          </tr>
+          <tr>
+            <td>Business Name:</td>
+            <td>Tattered Meadows</td>
+          </tr>
+          <tr>
+            <td>New or Redesign</td>
+            <td>New Website</td>
+          </tr>
+          <tr>
+            <td>Website Type:</td>
+            <td>Marketing, Community, Shopping, Blogging</td>
+          </tr>
+          <tr>
+            <td>Client Goal:</td>
+            <td>
+              Clients goal is to have a platform to blog about her creative
+              process behind her clothes upcycling. She also wishes to be able
+              to provide users the ability to buy her available pieces directly
+              on the site.
+            </td>
+          </tr>
+        </table>
+        <!-- Client Info Table End -->
+
+        <!-- Audience Info Table Start -->
+        <table class="audience_table">
+          <thead>
+            <tr>
+              <th>Audience</th>
+              <th>Issues, Concerns, and Needs</th>
+              <th>Approach</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Shoppers: <br />
+                People that want to buy a piece of clothing after visiting her
+                instagram. They enjoy handmade and upcycled clothing made from
+                small business owners. Values supporting a local artists or
+                business and is willing to pay more for the labor required.
+              </td>
+              <td>
+                <ul>
+                  <li>Built-in Shopping ability</li>
+                  <li>Store Inventory</li>
+                  <li>Returns</li>
+                  <li>Sizing</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Either build shopping feature from scratch or utilize some
+                    framework or service that provides shoping cart
+                    functionality and payment options.
+                  </li>
+                  <li>Include page for browsing available piece for sale.</li>
+                  <li>
+                    Build page with clearly defined return policy and
+                    instructions.
+                  </li>
+                  <li>Include ability to sort by size</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hobbyists: <br />
+                People who enjoy the process of how clothes are made or reused
+                in different ways. They like to learn different techniques
+                regarding sowing or working with different fabrics. They enjoy
+                learning about someone elses approach to clothes making.
+              </td>
+              <td>
+                <ul>
+                  <li>Index of topics</li>
+                  <li>Pictures</li>
+                  <li>Blog Search</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Organize posts with topics and allow for filtering these
+                    results.
+                  </li>
+                  <li>
+                    Incorporate pictures into blog posts that document the
+                    clients process.
+                  </li>
+                  <li>
+                    Allow for users to search for particular keywords and show
+                    blog posts that contain them.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Agencies/Partners: <br />
+                These are agencies/partners that may be interested in working
+                with the client; other small businesses looking to collaborate
+                or bigger brands wanting to partner.
+              </td>
+              <td>
+                <ul>
+                  <li>Business Inquiry</li>
+
+                  <li>Address</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    Implement a way to contact client specificly for business
+                    inquiries
+                  </li>
+
+                  <li>
+                    Provide an address used for collaberations to send material
+                    to client
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Audience Info Table End -->
+      </div>
+
+      <!-- START Footer -->
+      <footer>
+        <p>
+          <small>
+            &copy; 2022-<?=date("Y")?>
+            by <a href="contactme.php">Brandon Davila</a>, All Rights Reserved ~
+            <a id="html-checker" href="#">Check HTML</a> ~
+            <a id="css-checker" href="#">Check CSS</a>
+          </small>
+        </p>
+      </footer>
+      <!-- END Footer -->
+    </main>
+    <!-- END WRAPPER -->
+
+    <script>
+      //https://tinyurl.com/dynamic-html-checker
+      document
+        .getElementById("html-checker")
+        .setAttribute(
+          "href",
+          "https://validator.w3.org/nu/?doc=" + location.href
+        );
+      document
+        .getElementById("css-checker")
+        .setAttribute(
+          "href",
+          "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+
+      //manages mobile nav - from W3Schools
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
